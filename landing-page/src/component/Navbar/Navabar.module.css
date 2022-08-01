@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+   justify-content: center;
+   background-color: #efefef;
+}
+.listContainer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+}
+.list {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+ .list li a{
+    color: #000;
+ }
