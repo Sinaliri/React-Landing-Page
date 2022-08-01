@@ -1,5 +1,25 @@
 .imgFluid{
     width: 100%;
-    max-height: 790px;
-    height: auto;
+    height: 100%;
+}
+.wrapper{
+    position: relative;
+    height: 800px;
+}
+.textWrapper{
+    position: absolute;
+    bottom: 350px;
+    left: 50px;
+    transform: rotate(-12deg);
+}
+.textWrapper p{
+    font-size: 6rem;
+}
+.textWrapper p span{
+    color: #8000807e;
+}
+@media only screen and(max-width: 824px) {
+    .textWrapper p{
+        font-size: 3rem;
+    }
 }

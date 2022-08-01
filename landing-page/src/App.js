@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import BannerCarousel from './component/BannerCarousel/BannerCarousel'
+import MainBanner from './component/MainBanner/MainBanner'
 import Navbar from './component/Navbar/Navbar'
 
 export default class App extends Component {
@@ -6,7 +8,10 @@ export default class App extends Component {
     return (
       <>
       <Navbar />
+      {/* < BannerCarousel />   */}
+      <MainBanner />
       </>
+       
     )
   }
 }

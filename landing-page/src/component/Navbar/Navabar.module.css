@@ -17,3 +17,6 @@
  .list li a{
     color: #000;
  }
+ .list li a:hover{
+    color: rgb(76, 76, 197);
+ }
