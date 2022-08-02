@@ -1,12 +1,13 @@
 .header{
     display: flex;
-   justify-content: center;
+   justify-content: space-between;
+   align-items: center;
    background-color: #efefef;
 }
 .listContainer{
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: flex-start;
     
 }
 .list {
@@ -19,4 +20,11 @@
  }
  .list li a:hover{
     color: rgb(76, 76, 197);
+ }
+ .User{
+    display: flex;
+    justify-content: flex-end;
+ }
+ .User span{
+    margin-right: 20px;
  }

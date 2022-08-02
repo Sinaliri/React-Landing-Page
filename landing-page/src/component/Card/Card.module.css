@@ -1,0 +1,29 @@
+.Card{
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 10px 20px 50px 20px ;
+    flex-basis: 18%;
+    display: flex;
+    flex-direction: column;
+  /* //  width: 100px; */
+    box-shadow: 5px 5px 2px 0 rgba(188, 188, 188, 0.459);
+}
+.CardImage{
+    margin:10px auto;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.desc{
+    padding: 10px 30px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 0 0 20px 20px;
+}
+.Price{
+    background-color: green;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.Card:hover{
+    transform: scale(1.1)
+}

@@ -18,6 +18,9 @@ const Navbar = () => {
                 <li><a href='#'>CONTACT</a></li>
             </ul>
         </div>
+        <div className={NavbarStyles.User}>
+          <span>USER</span>
+        </div>
      </header>
     </>
 
