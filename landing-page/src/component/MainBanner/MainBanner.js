@@ -6,9 +6,9 @@ export default function MainBanner() {
     <>
        <div className={mbstyles.wrapper}>
        <img className={mbstyles.imgFluid} src={MainBannerpic} />
-       <div className={mbstyles.textWrapper}>
+       {/* <div className={mbstyles.textWrapper}>
         <p>learning <span>React.js</span></p>
-       </div>
+       </div> */}
        </div>
         
     </>

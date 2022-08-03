@@ -3,8 +3,10 @@
     height: 100%;
 }
 .wrapper{
+    width: 100%;
     position: relative;
-    height: 500px;
+    /* min-height: 300px; */
+ 
 }
 .textWrapper{
     position: absolute;

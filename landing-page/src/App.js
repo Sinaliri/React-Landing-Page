@@ -3,6 +3,8 @@ import React, { Component } from "react";
 import Cards from "./component/Cards/Cards";
 import MainBanner from "./component/MainBanner/MainBanner";
 import Navbar from "./component/Navbar/Navbar";
+import SearchBar from "./component/SearchBar/SearchBar";
+import LogoContainer from "./component/logoContainer/LogoContainer"
 
 export default class App extends Component {
   render() {
@@ -12,6 +14,8 @@ export default class App extends Component {
         {/* < BannerCarousel />   */}
         <MainBanner />
         <Cards />
+        <SearchBar />
+        <LogoContainer />
       </>
     );
   }
