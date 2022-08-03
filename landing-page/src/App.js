@@ -5,6 +5,7 @@ import MainBanner from "./component/MainBanner/MainBanner";
 import Navbar from "./component/Navbar/Navbar";
 import SearchBar from "./component/SearchBar/SearchBar";
 import LogoContainer from "./component/logoContainer/LogoContainer"
+import Footer from "./component/Footer/Footer";
 
 export default class App extends Component {
   render() {
@@ -16,6 +17,7 @@ export default class App extends Component {
         <Cards />
         <SearchBar />
         <LogoContainer />
+        <Footer/>
       </>
     );
   }
