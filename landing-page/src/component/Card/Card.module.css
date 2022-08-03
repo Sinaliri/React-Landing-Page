@@ -1,29 +1,46 @@
 .Card{
+    width: 250px;
     background-color: #fff;
     border-radius: 20px;
-    margin: 10px 20px 50px 20px ;
-    flex-basis: 18%;
+    margin: 60px 5px ;
+    /* flex-basis: 18%; */
     display: flex;
     flex-direction: column;
   /* //  width: 100px; */
-    box-shadow: 5px 5px 2px 0 rgba(188, 188, 188, 0.459);
+  box-shadow: 1px 5px 2px 0 rgba(188, 188, 188, 0.459);
+   
 }
 .CardImage{
+    padding: 0 20px;
+   
+    height: 200px;
     margin:10px auto;
     background-color: #fff;
     border-radius: 10px;
 }
 .desc{
-    padding: 10px 30px;
+    height: 100px;
+    /* padding: 10px 30px 0 30px; */
     background-color: rgb(236, 236, 236);
     border-radius: 0 0 20px 20px;
+    position: relative;
+    padding: 10px 10px 0 20px;
+
+}
+.CardName{
+    /* font-size: 10px; */
 }
 .Price{
     background-color: green;
     width: fit-content;
     padding: 5px 10px;
     border-radius: 10px;
+    font-size: 12px;
+    color: #fff;
+    /* position: absolute; */
+    top: 0;
 }
 .Card:hover{
-    transform: scale(1.1)
+    transform: scale(1.1);
+    box-shadow: 5px 5px 2px 0 rgba(188, 188, 188, 0.459);
 }

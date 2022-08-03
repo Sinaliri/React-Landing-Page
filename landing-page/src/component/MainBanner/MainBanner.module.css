@@ -4,13 +4,13 @@
 }
 .wrapper{
     position: relative;
-    height: 800px;
+    height: 500px;
 }
 .textWrapper{
     position: absolute;
-    bottom: 350px;
+    bottom: 190px;
     left: 50px;
-    transform: rotate(-12deg);
+    transform: rotate(-11deg);
 }
 .textWrapper p{
     font-size: 6rem;

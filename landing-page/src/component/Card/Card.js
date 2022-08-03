@@ -7,7 +7,7 @@ export default class Card extends Component {
       <div className={CardStyle.Card}>
         <img className={CardStyle.CardImage} src={image} alt={name} />
         <div className={CardStyle.desc}>
-        <h3 className={CardStyle.CardName}>{name}</h3>
+        <h4 className={CardStyle.CardName}>{name}</h4>
         <p className={CardStyle.Price}>{cost}</p>
         </div>
       </div>
