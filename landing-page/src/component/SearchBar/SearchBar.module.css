@@ -18,7 +18,18 @@
     padding: 10px;
     border: none;
     font-size: 1rem;
+    
 }
 .container input::-webkit-input-placeholder{
     font-size: 1rem;
+}
+.container .inputcontainer{
+    position: relative;
+}
+.container .inputcontainer span{
+    position: absolute;
+    color: #fff;
+    left: 10px;
+    bottom: -30px;
+
 }
