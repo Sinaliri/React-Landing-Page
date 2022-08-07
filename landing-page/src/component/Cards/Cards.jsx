@@ -7,7 +7,7 @@ export default class Cards extends Component {
     return (
       <div className={CardsStyle.SpecialOfferContainer}>
 
-        <span>Special Offer</span>
+        <span className={CardsStyle.cardstitle}>Special Offer</span>
         {
             SpecialOfferProducts.map((product)=>{
                 return <Card name={product.name} image={product.src} cost={product.Price} key={product.id} />
