@@ -25,19 +25,23 @@ export default class Card extends Component {
   render() {
 
     const {image , name , cost} = this.props;
+    const {counter}=this.state;
     return (
       <div className={CardStyle.Card}>
         <img className={CardStyle.CardImage} src={image} alt={name} />
     
         <div className={CardStyle.desc}>
         <h4 className={CardStyle.CardName}>{name}</h4>
-        <p className={CardStyle.Price}>{cost}</p>
+        {/* <p className={CardStyle.Price}>{cost} {counter ? `* ${counter} = ${counter * Number(cost.split(" ")[0])}`: ""}</p> */}
+        <p className={CardStyle.Price}>{cost} {counter!=0 && `* ${counter} = ${counter * Number(cost.split(" ")[0])}`}</p>
 
-        <div className={CardStyle.mount}>
-          <img className={this.state.counter ? "" : CardStyle.deactive} onClick={this.decreaseCount} src={down} alt="sssssssssss" />
+      <div className={CardStyle.row}>
+      <div className={CardStyle.mount}>
+          <img className={!counter && CardStyle.deactive} onClick={this.decreaseCount} src={down} alt="sssssssssss" />
           <span>{this.state.counter}</span>
           <img onClick={this.increaseCount} src={up} alt="ssssss" />
         </div>
+      </div>
       </div>
         </div>
        

@@ -6,26 +6,26 @@ const SpecialOfferProducts = [{
   id:1,
   name:"Apple AirPods Pro 2021",
   src:p4,
-  Price:"249$"
+  Price:"249 $"
 },
 {
   id:2,
   name:"Iphone 13 Pro Max",
   src:i13,
-  Price:"1599$"
+  Price:"1599 $"
 },
 {
     id:3,
     name:"MacBook Pro 2021",
     src:p2,
-    Price:"1999$"
+    Price:"1999 $"
   
 },
 {  
     id:4,
     name:"MacBook Pro Mk183 2021",
     src:p3,
-    Price:"1899$"
+    Price:"1899 $"
   }
 
 ];
