@@ -33,7 +33,7 @@ export default class Card extends Component {
         <div className={CardStyle.desc}>
         <h4 className={CardStyle.CardName}>{name}</h4>
         {/* <p className={CardStyle.Price}>{cost} {counter ? `* ${counter} = ${counter * Number(cost.split(" ")[0])}`: ""}</p> */}
-        <p className={CardStyle.Price}>{cost} {counter!=0 && `* ${counter} = ${counter * Number(cost.split(" ")[0])}`}</p>
+        <p className={CardStyle.Price}>{cost} {counter!==0 && `* ${counter} = ${counter * Number(cost.split(" ")[0])}`}</p>
 
       <div className={CardStyle.row}>
       <div className={CardStyle.mount}>
