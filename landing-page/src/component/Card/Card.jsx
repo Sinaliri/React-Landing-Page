@@ -37,9 +37,9 @@ export default class Card extends Component {
 
       <div className={CardStyle.row}>
       <div className={CardStyle.mount}>
-          <img className={!counter && CardStyle.deactive} onClick={this.decreaseCount} src={down} alt="sssssssssss" />
+          <img className={!counter ? CardStyle.deactive : ""} onClick={this.decreaseCount} src={down} alt="down" />
           <span>{this.state.counter}</span>
-          <img onClick={this.increaseCount} src={up} alt="ssssss" />
+          <img onClick={this.increaseCount} src={up} alt="up" />
         </div>
       </div>
       </div>

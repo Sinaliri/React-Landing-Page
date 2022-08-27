@@ -13,9 +13,8 @@
 }
 .CardImage{
     padding: 0 20px;
-   
     height: 200px;
-    margin:10px auto;
+    margin:10px;
     background-color: #fff;
     border-radius: 10px;
 }

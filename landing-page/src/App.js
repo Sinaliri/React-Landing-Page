@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 // import BannerCarousel from "./component/BannerCarousel/BannerCarousel";
-import Cards from "./component/Cards/Cards";
-import MainBanner from "./component/MainBanner/MainBanner";
+
 import Navbar from "./component/Navbar/Navbar";
-import SearchBar from "./component/SearchBar/SearchBar";
-import LogoContainer from "./component/logoContainer/LogoContainer"
 import Footer from "./component/Footer/Footer";
 import Landing from "./component/Landing-page/Landing";
+import Products from "./component/Products/Products";
+import { Route, Switch } from "react-router-dom";
 
 export default class App extends Component {
   render() {
@@ -14,8 +13,13 @@ export default class App extends Component {
       <>
         <Navbar />
         {/* < BannerCarousel />   */}
-        <Landing />
-        <Footer/>
+        <Switch>
+          <Route path="/Products" component={Products}/>
+          <Route path="/" component={Landing} />
+        </Switch>
+
+        {/* <Landing /> */}
+        <Footer />
       </>
     );
   }
