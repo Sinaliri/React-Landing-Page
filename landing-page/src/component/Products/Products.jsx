@@ -17,13 +17,22 @@ export default class Products extends Component {
         }))
     }
   render() {
+        const { products}=this.state;
     return (
       <div className={Styles.SpecialOfferContainer}>
-        {this.state.products.map((product)=>{
-           return <Card name={product.title} image={product.image} cost={`${product.price} $`} key={product.id} />
+        {
+            products.length ? 
+            products.map((product)=>{
+                return <Card name={product.title} image={product.image} cost={`${product.price} $`} key={product.id} />
+     
+             } 
+                 )
+            : 
+            <h1>loading ...</h1>
+            
+            
+        }
 
-        } 
-            )}
       </div>
     )
   }
