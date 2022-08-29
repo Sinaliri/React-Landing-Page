@@ -23,7 +23,7 @@ export default class Products extends Component {
         {
             products.length ? 
             products.map((product)=>{
-                return <Card name={product.title} image={product.image} cost={`${product.price} $`} key={product.id} />
+                return <Card name={product.title} image={product.image} cost={`${product.price} $`} key={product.id} id={product.id} />
      
              } 
                  )

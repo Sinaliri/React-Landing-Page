@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import CardStyle from "./Card.module.css"
 import up from "../../images/up.svg"
 import down from "../../images/down.svg"
+import { Link } from 'react-router-dom';
 export default class Card extends Component {
     constructor(){
       super();
@@ -24,14 +25,14 @@ export default class Card extends Component {
     }
   render() {
 
-    const {image , name , cost} = this.props;
+    const {image , name , cost , id} = this.props;
     const {counter}=this.state;
     return (
       <div className={CardStyle.Card}>
         <img className={CardStyle.CardImage} src={image} alt={name} />
     
         <div className={CardStyle.desc}>
-        <h4 className={CardStyle.CardName}>{name}</h4>
+        <h4 className={CardStyle.CardName}><Link to={`/Products/${id}`}>{name}</Link></h4>
         {/* <p className={CardStyle.Price}>{cost} {counter ? `* ${counter} = ${counter * Number(cost.split(" ")[0])}`: ""}</p> */}
         <p className={CardStyle.Price}>{cost} {counter!==0 && `* ${counter} = ${counter * Number(cost.split(" ")[0])}`}</p>
 

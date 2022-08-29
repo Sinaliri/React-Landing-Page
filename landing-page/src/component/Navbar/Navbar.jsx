@@ -16,7 +16,7 @@ const Navbar = () => {
                 <li><Link to="">SHOP</Link></li>
                 <li><Link to="">BLOG</Link></li>
                 <li><Link to="">CONTACT</Link></li>
-                <li><Link to="">ABOUT</Link></li>
+                <li><Link to="/aboutus">ABOUT</Link></li>
             </ul>
         </div>
         <div className={NavbarStyles.User}>
